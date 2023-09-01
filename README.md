@@ -1,52 +1,74 @@
-# Parrot Lab
+# Debug and Parrot Python Scripts
 
-## Learning Goals
+This repository contains two Python scripts: debug.py and parrot.py. These scripts serve different purposes and demonstrate basic Python programming concepts.
 
-- Define a function that accepts arguments.
-- Create a default argument.
-- Practice returning a value.
+# debug.py
 
-***
+The debug.py script showcases how to use Python's built-in pdb (Python Debugger) module for debugging. It defines a function divide_numbers that attempts to divide two numbers and demonstrates how to handle exceptions using try and except.
 
-## Key Vocab
+# Usage
 
-- **Interpreter**: a program that executes other programs. Python programs
-require the Python interpreter to be installed on your computer so that they
-can be run.
-- **Python Shell**: an interactive interpreter that can be accessed from the
-command line.
-- **Data Type**: a specific kind of data. The Python interpreter uses these
-types to determine which actions can be performed on different data items.
-- **Exception**: a type of error that can be predicted and handled without
-causing a program to crash.
-- **Code Block**: a collection of code that is interpreted together. Python
-groups code blocks by indentation level.
-- **Function**: a named code block that performs a sequence of actions when it
-is called.
-- **Scope**: the area in your program where a specific variable can be called.
+To run the debug.py script, follow these steps:
 
-***
+Ensure you have Python installed on your system.
 
-## Instructions
+Navigate to the directory containing debug.py using your terminal or command prompt.
 
-This is a **test-driven lab**. Run `pipenv install` to create your virtual
-environment and `pipenv shell` to enter the virtual environment. Then run
-`pytest -x` to run your tests. Use these instructions and `pytest`'s error
-messages to complete your work in the `lib/` folder.
+Run the script using the following command:
 
-In this lab, you'll be defining a function called `parrot()`.
+bash
+Copy code
+python debug.py
 
-The `parrot()` function should accept an argument of a string and both `print()`
-and `return` the string at the end of the function.
+# How it Works
 
-The `parrot()` function should have a default argument of `"Squawk!"`
+The debug.py script does the following:
 
-> **NOTE: _This lab is explicitly testing your ability to control the return
-> value of a function: not just what it does, but what it returns. Remember,
-> return values are important. What's the return value of `print()`?_**
+Defines a function divide_numbers(a, b) to perform division.
+Tries to divide two numbers (numerator and denominator).
+Catches a ZeroDivisionError if the denominator is zero.
+Starts a post-mortem debugging session using pdb.post_mortem() to inspect the program's state when an exception occurs.
 
-***
+# Contributing
+
+If you'd like to contribute to the debug.py script or report issues, please follow these guidelines:
+
+Reporting Issues: If you encounter a bug or have a suggestion, please open an issue on this repository.
+
+Contributing Code: If you want to contribute code improvements, fork this repository, make your changes, and submit a pull request.
+
+# parrot.py
+
+The parrot.py script is a simple example of a Python script that defines a function parrot_says. This function accepts a message as input and echoes it back, simulating what a parrot might do.
+
+# Usage
+To run the parrot.py script, follow these steps:
+
+Ensure you have Python installed on your system.
+
+Navigate to the directory containing parrot.py using your terminal or command prompt.
+
+Run the script using the following command:
+
+bash
+Copy code
+python parrot.py
+
+# How it Works
+The parrot.py script does the following:
+
+Defines a function parrot_says(message) that echoes the provided message.
+Prompts the user to input a message.
+Calls the parrot_says function with the user's message and displays the echoed message.
+
+# Contributing
+
+If you'd like to contribute to the parrot.py script or report issues, please follow the same contribution guidelines mentioned for debug.py.
+
+# License
+These scripts are provided under the MIT License. You can use and modify them freely according to the terms of the license.
 
 ## Resources
 
 - [Default arguments in Python - GeeksforGeeks](https://www.geeksforgeeks.org/default-arguments-in-python/)
+
